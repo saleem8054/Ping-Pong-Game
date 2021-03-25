@@ -13,8 +13,6 @@ class Ball(Turtle):
         
         self.goto(self.new_x_cor,self.new_y_cor)
         
-        time.sleep(0.02)
-        
     def bounce_y(self):
         self.y_increment *= -1
         

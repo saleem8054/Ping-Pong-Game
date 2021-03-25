@@ -1,7 +1,7 @@
 from ScoreBoard import ScoreBoard
 from Ball import Ball
 from paddle import Paddle
-from turtle import Turtle,Screen
+from turtle import Screen
 import time
 
 PADDLE_INITIAL_POSITION_RIGHT = (430,0)
@@ -33,6 +33,9 @@ game_is_on = True
 while game_is_on:
     screen.update()
     ball.move()
+    
+    time.sleep(0.02)
+    
     
     if ball.ycor() > 280 or ball.ycor() < -280 :
         ball.bounce_y()
